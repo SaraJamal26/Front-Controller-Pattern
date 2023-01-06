@@ -1,6 +1,6 @@
-
 public class Task {
-	private int id;
+
+    private int id;
     private String description;
 
     public Task(int id, String description) {
@@ -23,5 +23,4 @@ public class Task {
     public void setDescription(String description) {
         this.description = description;
     }
-
 }

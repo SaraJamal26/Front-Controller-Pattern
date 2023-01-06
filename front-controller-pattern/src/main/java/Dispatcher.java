@@ -6,7 +6,6 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
 public class Dispatcher {
-
 	public void dispatch(HttpServletRequest request, HttpServletResponse response, String view) {
 
         if (view != null){
