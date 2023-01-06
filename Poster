@@ -11,3 +11,9 @@ Some of Cons are:
 Increased complexity: as there is now an additional layer of abstraction between the incoming request and the resources that handle it.
 Increased development time:  as it involves creating a new layer of abstraction in the application.
 Reduced flexibility:  as these changes must be made in a single location.
+Structure: The front controller design pattern typically consists of the following components:
+ Front controller: This is the central point of access for handling requests. It receives incoming requests and dispatches them to the appropriate resources for processing.
+ Request handler: This component is responsible for handling the processing of requests. 
+ View: This component is responsible for rendering the response to the client. It receives data from the request handler and generates the appropriate output
+ Dispatcher: This component is responsible for forwarding requests from the front controller to the appropriate request handler.
+ Filter: This component can be used to pre-process incoming requests before they are forwarded to the front controller
