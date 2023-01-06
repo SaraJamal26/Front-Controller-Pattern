@@ -2,8 +2,11 @@ Introduction: The Front Controller pattern is a type of behavioral design patter
  The front controller design pattern is a software design pattern that provides a centralized point of access for handling requests. A single handler to handle all requests. It is often used in web applications to handle incoming HTTP requests and dispatch them to the appropriate resources for processing.
 The front controller acts as a gatekeeper, receiving all incoming requests and forwarding them to the appropriate resources for handling. It can also perform authentication and authorization checks to ensure that only authorized requests are processed.
 
-Objective: The main objective of front controller pattern is toprovide centeral mechanism system that can do following tasks:
-Authentication,Authorization,Logging and Tracking,Routing and Consistency
+Objective: Improve maintainability, extensibility, and performance by centralizing request handling and allowing common request handling functionality to be implemented once and reused.
+Improve security by providing a single point of access for implementing authentication and authorization checks.
+Provide a central mechanism for performing tasks such as authentication, authorization, logging and tracking, routing, and consistency.
+Particularly useful in web applications with a large number of request types or a complex request handling process.
+
 
 Also Known as: This pattern is also known as the "dispatcher pattern." The term "dispatcher pattern" comes from the fact that the front controller dispatches incoming requests to the appropriate resources for handling.
 
