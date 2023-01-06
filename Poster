@@ -1,1 +1,2 @@
 The Front Controller pattern is a type of behavioral design pattern. Behavioral design patterns are design patterns that focus on the communication between objects and how objects operate together to achieve a certain behavior.
+Introduction: The Front Controller Pattern is a design pattern that is used to provide a centralized request handling mechanism so that all requests are handled by a single handler.
