@@ -3,3 +3,11 @@ Introduction: The front controller design pattern is a software design pattern t
 The front controller acts as a gatekeeper, receiving all incoming requests and forwarding them to the appropriate resources for handling. It can also perform authentication and authorization checks to ensure that only authorized requests are processed.
 Objective: The main objective of front controller pattern is toprovide centeral mechanism system that can do following tasks:
 Authentication,Authorization,Logging and Tracking,Routing and Consistency
+Pros & Cons: Some of the Pros of Front Controller Pattern are:
+Improved security:  the front controller can act as a security gatekeeper.
+ Improved performance: front controller can cache common resources in data ,reduces number of expensive calls.
+ Improved maintainability: changes to the application's request handling logic can be made in a single location.
+Some of Cons are:
+Increased complexity: as there is now an additional layer of abstraction between the incoming request and the resources that handle it.
+Increased development time:  as it involves creating a new layer of abstraction in the application.
+Reduced flexibility:  as these changes must be made in a single location.
