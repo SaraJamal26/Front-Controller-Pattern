@@ -2,28 +2,7 @@ Introduction: The Front Controller pattern is a type of behavioral design patter
  The front controller design pattern is a software design pattern that provides a centralized point of access for handling requests. A single handler to handle all requests. It is often used in web applications to handle incoming HTTP requests and dispatch them to the appropriate resources for processing.
 The front controller acts as a gatekeeper, receiving all incoming requests and forwarding them to the appropriate resources for handling. It can also perform authentication and authorization checks to ensure that only authorized requests are processed.
 
-Objective: Improve maintainability, extensibility, and performance by centralizing request handling and allowing common request handling functionality to be implemented once and reused.
-Improve security by providing a single point of access for implementing authentication and authorization checks.
-Provide a central mechanism for performing tasks such as authentication, authorization, logging and tracking, routing, and consistency.
-Particularly useful in web applications with a large number of request types or a complex request handling process.
-
-
-Also Known as: This pattern is also known as the "dispatcher pattern." The term "dispatcher pattern" comes from the fact that the front controller dispatches incoming requests to the appropriate resources for handling.
-
-Pros & Cons: Improved security:  the front controller can act as a security gatekeeper.
- Improved performance: front controller can cache common resources in data ,reduces number of expensive calls.
- Improved maintainability: changes to the application's request handling logic can be made in a single location.
-Some of Cons are:
-Increased complexity: as there is now an additional layer of abstraction between the incoming request and the resources that handle it.
-Increased development time:  as it involves creating a new layer of abstraction in the application.
-Reduced flexibility:  as these changes must be made in a single location.
-
-Structure: The front controller design pattern typically consists of the following components:
- Front controller: This is the central point of access for handling requests. It receives incoming requests and dispatches them to the appropriate resources for processing.
- Request handler: This component is responsible for handling the processing of requests. 
- View: This component is responsible for rendering the response to the client. It receives data from the request handler and generates the appropriate output
- Dispatcher: This component is responsible for forwarding requests from the front controller to the appropriate request handler.
- Filter: This component can be used to pre-process incoming requests before they are forwarded to the front controller
+Intent: Provide a centralized point of access for handling all requests in an application.
 
 Motivation: Centralize request handling in a single handler, which can make it easier to maintain and extend the application.
 Improve performance by allowing common request handling functionality to be implemented once and reused.
@@ -31,11 +10,27 @@ Improve security by providing a single point of access for implementing authenti
 Provide a consistent and flexible approach to request handling, particularly in applications with a large number of request types or a complex request handling process.
 Allow the application to be easily extended by adding new request handling functionality without changing existing code.
 
-Intent: Provide a centralized point of access for handling all requests in an application.
+Objective: Improve maintainability, extensibility, and performance by centralizing request handling and allowing common request handling functionality to be implemented once and reused.
+Improve security by providing a single point of access for implementing authentication and authorization checks.
+Provide a central mechanism for performing tasks such as authentication, authorization, logging and tracking, routing, and consistency.
+Particularly useful in web applications with a large number of request types or a complex request handling process.
 
-Applicability:  The front controller design pattern is applicable in web, desktop and console applications where there is a need to handle requests in a centralized and consistent way. It is particularly useful in applications with a large number of request types or a complex request handling process.
+Also Known as: This pattern is also known as the "dispatcher pattern." The term "dispatcher pattern" comes from the fact that the front controller dispatches incoming requests to the appropriate resources for handling.
 
-Consequences: Provides improved maintainability and extensibility of the application, as well as improved performance due to the reuse of common request handling functionality. However, it can also result in a more complex application structure, as well as a more tightly coupled system.
+Structure: The front controller design pattern typically consists of the following components:
+ Front controller: This is the central point of access for handling requests. It receives incoming requests and dispatches them to the appropriate resources for processing.
+ Request handler: This component is responsible for handling the processing of requests. 
+ View: This component is responsible for rendering the response to the client. It receives data from the request handler and generates the appropriate output
+ Dispatcher: This component is responsible for forwarding requests from the front controller to the appropriate request handler.
+ Filter: This component can be used to pre-process incoming requests before they are forwarded to the front controller
+ 
+Pros & Cons: Improved security:  the front controller can act as a security gatekeeper.
+ Improved performance: front controller can cache common resources in data ,reduces number of expensive calls.
+ Improved maintainability: changes to the application's request handling logic can be made in a single location.
+Some of Cons are:
+Increased complexity: as there is now an additional layer of abstraction between the incoming request and the resources that handle it.
+Increased development time:  as it involves creating a new layer of abstraction in the application.
+Reduced flexibility:  as these changes must be made in a single location.
 
 Known Uses: The pattern is commonly used in web application frameworks, such as Java's JSF and Spring MVC.
 
